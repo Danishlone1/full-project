@@ -1,0 +1,199 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<ul class="ul">
+    <li class="li title">
+        <a routerLink='../home'><img class="image" src="../../favicon.ico"> Fitness Tracker</a>
+    </li>
+    <li class="li"><a (click)="signout()">Sign out</a></li>
+    <li class="li"><a routerLink='../home'>Home</a></li>
+
+</ul>
+
+
+
+
+<br>
+<div class="component">
+
+    <section>
+      
+      <div class=" mb-4">
+        
+        <div class="row">
+  
+          <div class="col-md-6">
+            <img class="img-fluid rounded-left" src="https://ca-times.brightspotcdn.com/dims4/default/ea9d7c0/2147483647/strip/true/crop/1254x836+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Faa%2Fe5%2F62eb933a29c60ba72bb16bfe66d0%2Fpac-free-yoga-san-diego-20180516-001">
+          </div>
+  
+          <div class="tablecontainer">
+            
+<div class="table-responsive text-nowrap">
+    <!--Table-->
+    <table class="table table-striped">
+
+      <!--Table head-->
+      
+      <!--Table head-->
+
+      <!--Table body-->
+      <tbody>
+        <tr>
+            <th > First Name:</th>
+            <td>{{user.firstName}}</td>
+        </tr>
+        <tr>
+            <th>Last Name:</th>
+            <td>{{user.lastName}}</td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td>{{user.email}}</td>
+        </tr>
+        <tr>
+            <th>Gender:</th>
+            <td>{{user.gender}}</td>
+        </tr>
+        <tr>
+            <th>Age:</th>
+            <td>{{user.age}} yrs</td>
+        </tr>
+        <tr>
+            <th>Height:</th>
+            <td>{{user.height}} cms</td>
+        </tr>
+        <tr>
+            <th>Weight:</th>
+            <td>{{user.weight}} kgs</td>
+        </tr>
+        <tr>
+            <th>BMI:</th>
+            <td>{{user.bmi}}</td>
+        </tr>
+        <tr>
+            <th>BMI Category:</th>
+            <td *ngIf="user.category == 'underweight_male' || user.category == 'underweight_female'">
+                UnderWeight</td>
+            <td *ngIf="user.category == 'overweight_male' || user.category == 'overweight_female'">
+                OverWeight</td>
+            <td *ngIf="user.category == 'normal_male' || user.category == 'noramal_female'">
+                normal</td>
+        </tr>
+      </tbody>
+      <!--Table body-->
+
+
+    </table>
+    <!--Table-->
+  </div>
+           
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </section>
+  
+  </div>
+
+  <div class="container my-5 py-5 z-depth-1">
+ 
+ 
+        <!--Section: Content-->
+        <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+    
+          <!--Grid row-->
+          <div class="row">
+    
+            <!--Grid column-->
+            <div class="col-md-6 mb-4 mb-md-0">
+    
+              <h3 class="font-weight-bold"><u>Workout|Sweat|Develop|Achieve</u></h3>
+    
+              <p class="text-muted"> The Category in your profile should not bother you, Whatever it may be we will always be with you to train you, guide you and help you to achieve your dream goals.</p>
+              <p>So....</p>
+              <a class="btn" routerLink='../meal' role="button">Start now</a>
+    
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-md-6 mb-4 mb-md-0">
+    
+              <!--Image-->
+              <div class="view overlay z-depth-1-half">
+                <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/07/05/Pictures/_a021f0b0-8046-11e8-8bd0-affd130bd192.jpg" class="img-fluid"
+                  alt="">
+                <a href="#">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+    
+            </div>
+            <!--Grid column-->
+    
+          </div>
+          <!--Grid row-->
+    
+    
+        </section>
+        <!--Section: Content-->
+    
+    
+      </div>
+  
+  
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About us</h6>
+          <p class="text-justify"><b>Fitness Tracker</b> is established to give the healthy life back to the people who were in the search of health and well-being because <i>EVERYONE DESERVES TO BE HEALTHY AND FIT</i></p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Our Services</h6>
+          <ul class="footer-links">
+            <li><a href="https://www.google.com/search?q=cardio"> Cardio</a></li>
+            <li><a href="https://www.google.com/search?q=weight%20training">Weight training</a></li>
+            <li><a href="https://www.google.com/search?sxsrf=ALeKk00NrDzl7fU4BZjCgU964njQ4jFGCg%3A1593100327161&ei=J8j0XtS9Cd3Wz7sPn_q16A4&q=yoga&oq=yoga&gs_lcp=CgZwc3ktYWIQAzIHCAAQsQMQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzIECAAQQzIFCAAQsQM6BwgjEOoCECc6BAgjECc6BQgAEIMBOgIIAFCaqgFYqa8BYP-wAWgBcAB4AIABzwGIAdADkgEFMC4yLjGYAQCgAQGqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwiU7d2YqZ3qAhVd63MBHR99De0Q4dUDCAw&uact=5">Yoga</a></li>
+            <li><a href="https://www.google.com/search?sxsrf=ALeKk03-qMXon0xm7usw5-QeX5J5MvIWlQ%3A1593100372284&ei=VMj0Xr_4EKfjz7sPiMS1qAs&q=meditation&oq=medi&gs_lcp=CgZwc3ktYWIQAxgAMgcIABCxAxBDMgQIABBDMgIIADIHCAAQFBCHAjIFCAAQsQMyAggAMgIIADICCAAyBQgAELEDMgUIABCDAToHCCMQ6gIQJzoECCMQJzoFCAAQkQJQrcoCWIDPAmD_2AJoAXAAeACAAY4CiAGvB5IBBTAuMS4zmAEAoAEBqgEHZ3dzLXdperABCg&sclient=psy-ab">Meditation</a></li>
+            <li><a href="https://www.google.com/search?sxsrf=ALeKk01UccHaQvzWEt43Gz_w1wr7_WTCUw%3A1593100351010&ei=P8j0Xt0f3eLPuw_F3r24CQ&q=pilates&oq=pilates&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECAAQQzIHCAAQsQMQQzIKCAAQsQMQFBCHAjIECAAQQzIFCAAQsQMyBAgAEEMyBAgAEEMyBQgAELEDMgQIABBDOgcIIxDqAhAnOgIIADoFCAAQgwFQ2ZMBWKqbAWDGnAFoAXAAeACAAZQCiAGECZIBBTAuMS40mAEAoAEBqgEHZ3dzLXdperABCg&sclient=psy-ab&ved=0ahUKEwidu42kqZ3qAhVd8XMBHUVvD5cQ4dUDCAw&uact=5">Pilates</a></li>
+            <li><a href="https://www.google.com/search?sxsrf=ALeKk02mxh2yEGhVZ1wWofHn3TklNUBIwA%3A1593100417484&ei=gcj0XrSOHdXD3LUPrYiY-AM&q=zumba&oq=zumba&gs_lcp=CgZwc3ktYWIQAzIECAAQQzIECAAQQzIHCAAQsQMQQzIFCAAQsQMyBwgAEBQQhwIyAggAMgUIABCxAzIFCAAQsQMyAggAMgUIABCxAzoHCCMQ6gIQJzoECCMQJzoFCAAQkQI6CAgAELEDEJECUPqcAVjzpQFgsacBaAFwAHgAgAGTAogBwQeSAQMyLTSYAQCgAQGqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwj00ubDqZ3qAhXVIbcAHS0EBj8Q4dUDCAw&uact=5">Zumba</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+       <a href="#">Fitness Tracker</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
